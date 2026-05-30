@@ -24,7 +24,7 @@ struct FMyDataFragment : public FMassFragment
 // Tags (識別子)
 // ---------------------------
 USTRUCT()
-struct FCrowdTag : public FMassFragment
+struct FCrowdTag : public FMassTag
 {
 	GENERATED_BODY()
 };
