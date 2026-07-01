@@ -14,4 +14,4 @@ jobs:
 
       - name: Build Project
         run: |
-          & "C:\Program Files\Epic Games\UE_5.7\Engine\Build\BatchFiles\RunUAT.bat" BuildCookRun -project="${{ github.workspace }}\GTARace.uproject" -targetplatform=Win64 -platform=Win64 -noP4 -clientconfig=Shipping -serverconfig=Shipping -cook -build -stage -pak -archive -archivedirectory="${{ github.workspace }}\BuildOutput" -target=GTARace -NoEditor -NoLiveCoding
+          & "C:\Program Files\Epic Games\UE_5.7\Engine\Build\BatchFiles\RunUAT.bat" BuildCookRun -project="${{ github.workspace }}\GTARace.uproject" -targetplatform=Win64 -platform=Win64 -noP4 -clientconfig=Shipping -serverconfig=Shipping -build -stage -pak -archive -archivedirectory="${{ github.workspace }}\BuildOutput" -target=GTARace -NoEditor -NoLiveCoding -skipcook -iterate
