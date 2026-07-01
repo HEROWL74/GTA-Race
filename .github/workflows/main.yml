@@ -1,0 +1,15 @@
+name: CI Build
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Build Project
+        run: |
+          & "C:\Program Files\Epic Games\UE_5.7\Engine\Build\BatchFiles\RunUAT.bat" BuildCookRun -project="${{ github.workspace }}\YourProject.uproject" -noP4 -platform=Win64 -clientconfig=Shipping -serverconfig=Shipping -cook -build -stage -pak -archive -archivedirectory="${{ github.workspace }}\BuildOutput"
