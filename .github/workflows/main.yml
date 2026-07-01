@@ -2,6 +2,10 @@ name: CI Build
 
 on: [push]
 
+concurrency:
+  group: ci-build
+  cancel-in-progress: false
+
 jobs:
   build:
     runs-on: self-hosted
