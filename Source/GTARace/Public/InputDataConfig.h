@@ -16,4 +16,6 @@ public:
 	UInputAction* Move;
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
 	UInputAction* Look;
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
+	UInputAction* Jump;
 };
