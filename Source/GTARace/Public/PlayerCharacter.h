@@ -32,7 +32,8 @@ private:
 	void Move(const FInputActionValue& Value);
 	UFUNCTION()
 	void Look(const FInputActionValue& Value);
-	UFUNCTION()
-	void PlayerJump(const FInputActionValue& Value);
+	
+	void Jump() override;
+	void StopJumping() override;
 
 };
