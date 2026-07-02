@@ -18,4 +18,6 @@ public:
 	UInputAction* Look;
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
 	UInputAction* Jump;
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
+	UInputAction* StopJumping;
 };

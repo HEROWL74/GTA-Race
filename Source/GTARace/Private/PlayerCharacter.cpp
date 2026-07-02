@@ -31,6 +31,8 @@ void APlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 	
 	Input->BindAction(InputActions->Move, ETriggerEvent::Triggered, this, &APlayerCharacter::Move);
 	Input->BindAction(InputActions->Look, ETriggerEvent::Triggered, this, &APlayerCharacter::Look);
+	Input->BindAction(InputActions->Jump, ETriggerEvent::Triggered, this, &APlayerCharacter::Jump);
+	Input->BindAction(InputActions->Jump, ETriggerEvent::Completed, this, &APlayerCharacter::StopJumping);
 	
 	APlayerController* PlayerController = Cast<APlayerController>(GetWorld()->GetFirstPlayerController());
 	if (PlayerController)
@@ -62,7 +64,12 @@ void APlayerCharacter::Look(const FInputActionValue& Value)
 	AddControllerPitchInput(LookAxisVector.Y);
 }
 
-void APlayerCharacter::PlayerJump(const FInputActionValue& Value)
+void APlayerCharacter::Jump()
 {
-	
+	Super::Jump();
+}
+
+void APlayerCharacter::StopJumping()
+{
+	Super::StopJumping();
 }
