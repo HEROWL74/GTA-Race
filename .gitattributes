@@ -10,9 +10,9 @@
 # A place to store art
 Art/** filter=lfs diff=lfs merge=lfs binary 
 # The in game content is binary
-Projects/**/Content/** filter=lfs diff=lfs merge=lfs binary 
-Projects/**/DerivedDataCache/** filter=lfs diff=lfs merge=lfs binary
-Projects/**/Binaries/** filter=lfs diff=lfs merge=lfs binary 
+GTARace/**/Content/** filter=lfs diff=lfs merge=lfs binary 
+GTARace/**/DerivedDataCache/** filter=lfs diff=lfs merge=lfs binary
+GTARace/**/Binaries/** filter=lfs diff=lfs merge=lfs binary 
 # UE file types
 *.uasset filter=lfs diff=lfs merge=lfs -text
 *.umap filter=lfs diff=lfs merge=lfs -text
