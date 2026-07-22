@@ -104,6 +104,10 @@
 				"Linux",
 				"Mac"
 			]
+		},
+		{
+			"Name": "ChaosVehiclesPlugin",
+			"Enabled": true
 		}
 	]
 }
