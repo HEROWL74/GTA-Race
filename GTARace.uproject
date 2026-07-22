@@ -108,6 +108,10 @@
 		{
 			"Name": "SunPosition",
 			"Enabled": true
+		},
+		{
+			"Name": "ChaosVehiclesPlugin",
+			"Enabled": true
 		}
 	]
 }
