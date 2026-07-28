@@ -35,10 +35,6 @@
 			"Enabled": false
 		},
 		{
-			"Name": "ChaosEditor",
-			"Enabled": false
-		},
-		{
 			"Name": "Dataflow",
 			"Enabled": false
 		},
